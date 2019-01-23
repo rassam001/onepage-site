@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton|Montserrat:300,400,700");
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+/* general rules */
+a {
+  text-decoration: none;
+  color: tomato;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.cf::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+figure {
+  margin: 0;
+}
+h3 {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+section:not(#intro) {
+  padding-top: 100px;
+}
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(51, 51, 51, 0.212);
+}
+.logo {
+  display: block;
+  float: left;
+  font-family: Monoton, serif;
+  margin: 40px 50px;
+  font-size: 20px;
+}
+nav {
+  float: right;
+  margin-right: 50px;
+  height: 100px;
+}
+nav ul {
+  margin-top: 30px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+nav li:first-of-type {
+  margin-left: 0;
+}
+nav li:last-of-type {
+  margin-right: 0;
+}
+nav li a {
+  padding: 0.5em;
+  display: inline-block;
+}
+
+/* INTRO */
+#intro {
+  height: 100vh;
+}
+#intro figure {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+#intro figure img {
+  height: 100vh;
+  width: auto;
+}
+#intro article {
+  float: right;
+  width: 50%;
+  margin: 250px auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+/* ABOUT US */
+#aboutus {
+  width: 80%;
+  margin: 0 auto;
+}
+#aboutus figure {
+  float: left;
+  width: 29%;
+}
+#aboutus figure:nth-of-type(2) {
+  margin: 0 40px;
+}
+/* #aboutus figure:first-of-type{
+    margin-left: 0;
+}
+#aboutus figure:last-of-type{
+    margin-right: 0;
+} */
+#aboutus figcaption {
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(180, 180, 180);
+}
+#aboutus img {
+  vertical-align: middle;
+}
+
+/* BLOG */
+#blog figure {
+  display: inline-block;
+  width: 30%;
+  margin: 20px 19px;
+}
+/* contact */
+#contact article {
+  width: 50%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+#contact address,
+#contact a[href*="tel"],
+#contact a[href*="email"] {
+  margin: 10px 0;
+  display: block;
+}
+#contact div {
+  text-align: center;
+}
+#contact i {
+  font-size: 25px;
+  margin: 10px;
+}
+/* FOOTER */
+footer {
+  background-color: rgb(155, 155, 155);
+}
+footer p {
+  float: right;
+  font-size: 10px;
+  color: white;
+  margin: 50px;
+}
+footer p i {
+  color: red;
+}
+
+/* to top */
+.to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #444;
+  color: white;
+  padding: 20px;
+}
